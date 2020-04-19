@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-teal">
+    <h1><%= heading %></h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+
+    <% for(let i=0; i< logs.length; i++) { %>
+        <div class="w3-third">
+            <div class="w3-card">
+               <% var x = log+logs[i].image; %> 
+                <img src="<%= x %>" style="width:100%">
+            </div>
+        </div>
+    <% }; %>
+</div>
+
+</body>
+</html>
